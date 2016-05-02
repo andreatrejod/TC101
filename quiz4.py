@@ -1,15 +1,17 @@
+import os
+os.system ("clear")
 import math
 print("Euler Number")
-stop=int(input("Por favor dame el numero en el cual quieres que termine la secuencia "))
+stop=int(input("Please give me the number of the end of the sequency: "))
 
-def euler_calc (parar):
-    contador=0
-    otra=0
-    while(contador<=parar):
-        f=math.factorial(contador)
-        otra=otra+1/f
-        contador=contador+1
+def euler_calc (stop):
+    counter=0
+    other=0
+    while(counter<=stop):
+        f=math.factorial(counter)
+        other=other+1/f
+        counter=counter+1
 
-    return otra
-resultado=euler_calc(stop)
-print(resultado)
+    return other
+result=euler_calc(stop)
+print(result)
